@@ -1,4 +1,4 @@
-wait(10)
+wait(2)
 
 -- Gui to Lua
 -- Version: 3.2
@@ -1591,3 +1591,70 @@ local function OUOZ_fake_script() -- CloseButton.LocalScript
 	end)
 end
 coroutine.wrap(OUOZ_fake_script)()
+
+while true do
+	ts:Create(Img1, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img1, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+	ts:Create(Img2, ti, {ImageTransparency = 0}):Play()
+
+	ts:Create(Img2, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img2, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+	ts:Create(Img3, ti, {ImageTransparency = 0}):Play()
+
+	ts:Create(Img3, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img3, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+	ts:Create(Img5, ti, {ImageTransparency = 0}):Play()
+
+	ts:Create(Img5, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img5, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+	ts:Create(Img6, ti, {ImageTransparency = 0}):Play()
+
+	ts:Create(Img6, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img6, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+	ts:Create(Img7, ti, {ImageTransparency = 0}):Play()
+
+	ts:Create(Img7, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img7, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+	ts:Create(Img8, ti, {ImageTransparency = 0}):Play()
+
+	ts:Create(Img8, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img8, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+	ts:Create(Img9, ti, {ImageTransparency = 0}):Play()
+
+	ts:Create(Img9, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img9, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+	ts:Create(Img10, ti, {ImageTransparency = 0}):Play()
+
+	ts:Create(Img10, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img10, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+	ts:Create(Img11, ti, {ImageTransparency = 0}):Play()
+
+	ts:Create(Img11, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img11, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+	ts:Create(Img12, ti, {ImageTransparency = 0}):Play()
+
+	ts:Create(Img12, ti, {ImageTransparency = 0}):Play()
+	wait(10)
+	ts:Create(Img12, ti, {ImageTransparency = 1}):Play()
+	wait(.25)
+end
