@@ -1,4 +1,4 @@
-wait(2)
+wait(10)
 
 -- Gui to Lua
 -- Version: 3.2
@@ -233,7 +233,7 @@ Title.Position = UDim2.new(0.0500000007, 0, 0.0250000004, 0)
 Title.Size = UDim2.new(0.5, 0, 0.0500000007, 0)
 Title.ZIndex = 4
 Title.Font = Enum.Font.GothamBold
-Title.Text = "Knotex - Made for good boys UwU"
+Title.Text = "Name Pending"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextScaled = true
 Title.TextSize = 14.000
@@ -428,7 +428,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
 TextLabel_2.Size = UDim2.new(0.925000012, 0, 0.5, 0)
 TextLabel_2.Font = Enum.Font.GothamBold
-TextLabel_2.Text = "COCK TOGGLE >.<"
+TextLabel_2.Text = "COCK TOGGLE"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -529,7 +529,7 @@ TextLabel_4.BorderSizePixel = 0
 TextLabel_4.Position = UDim2.new(0.5, 0, 0.5, 0)
 TextLabel_4.Size = UDim2.new(0.925000012, 0, 0.5, 0)
 TextLabel_4.Font = Enum.Font.GothamBold
-TextLabel_4.Text = "PISS TOGGLE ^w^"
+TextLabel_4.Text = "PISS TOGGLE"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
@@ -673,7 +673,7 @@ TextLabel_7.BorderSizePixel = 0
 TextLabel_7.Position = UDim2.new(0.5, 0, 0.5, 0)
 TextLabel_7.Size = UDim2.new(0.925000012, 0, 0.5, 0)
 TextLabel_7.Font = Enum.Font.GothamBold
-TextLabel_7.Text = "ERECTION TOGGLE OwO"
+TextLabel_7.Text = "ERECTION TOGGLE"
 TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 14.000
@@ -1591,6 +1591,13 @@ local function OUOZ_fake_script() -- CloseButton.LocalScript
 	end)
 end
 coroutine.wrap(OUOZ_fake_script)()
+
+local ts = game:GetService("TweenService")
+local ti = TweenInfo.new(
+	.5,
+	Enum.EasingStyle.Sine,
+	Enum.EasingDirection.Out
+)
 
 while true do
 	ts:Create(Img1, ti, {ImageTransparency = 0}):Play()
