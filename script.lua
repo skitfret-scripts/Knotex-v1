@@ -1450,93 +1450,95 @@ _CUTOGGLE.MouseButton1Click:Connect(function()
 end)
 
 _PTOGGLE.MouseButton1Click:Connect(function()
-	if __INIT__ and COCK_ENABLED and not ERECT_ENABLED then
-		-- Accents
-		_UNDTOGGLE.ToggledAccent.Enabled = false -- undies
-		_CLTOGGLE.ToggledAccent.Enabled = false -- clothing
-		_PPTOGGLE.ToggledAccent.Enabled = true -- penis
-		_ETOGGLE.ToggledAccent.Enabled = false -- erection
-		_CUTOGGLE.ToggledAccent.Enabled = false -- cum
-		_PTOGGLE.ToggledAccent.Enabled = true -- piss
-
-		-- mechanics
-		shirt.ShirtTemplate = current_nood_shirt
-		pants.PantsTemplate = current_nood_pants
-
-		Undie.Transparency = 1
-		Erect.Transparency = 1
-		Base.Transparency = 0
-		FlaccidPissEmitter.Enabled = true
-		ErectPissEmitter.Enabled = false
-		FlaccidCumEmitter.Enabled = false
-		ErectCumEmitter.Enabled = false
-		Undie.Color = Color3.new(0.937,0.937,0.937)
-
-		-- vars
-		UNDIES_ENABLED = false
-		CLOTHED_ENABLED = false
-		ERECT_ENABLED = false
-		COCK_ENABLED = true
-		PISS_ENABLED = true
-		CUM_ENABLED = false
-	elseif __INIT__ and COCK_ENABLED and ERECT_ENABLED then
-		-- Accents
-		_UNDTOGGLE.ToggledAccent.Enabled = false -- undies
-		_CLTOGGLE.ToggledAccent.Enabled = false -- clothing
-		_PPTOGGLE.ToggledAccent.Enabled = true -- penis
-		_ETOGGLE.ToggledAccent.Enabled = true -- erection
-		_CUTOGGLE.ToggledAccent.Enabled = false -- cum
-		_PTOGGLE.ToggledAccent.Enabled = true -- piss
-
-		-- mechanics
-		shirt.ShirtTemplate = current_nood_shirt
-		pants.PantsTemplate = current_nood_pants
-
-		Undie.Transparency = 1
-		Erect.Transparency = 0
-		Base.Transparency = 0
-		FlaccidPissEmitter.Enabled = false
-		ErectPissEmitter.Enabled = true
-		FlaccidCumEmitter.Enabled = false
-		ErectCumEmitter.Enabled = false
-		Undie.Color = Color3.new(0.937,0.937,0.937)
-
-		-- vars
-		UNDIES_ENABLED = false
-		CLOTHED_ENABLED = false
-		ERECT_ENABLED = true
-		COCK_ENABLED = true
-		PISS_ENABLED = true
-		CUM_ENABLED = false
-	elseif __INIT__ and not COCK_ENABLED and UNDIES_ENABLED then
-		-- Accents
-		_UNDTOGGLE.ToggledAccent.Enabled = false -- undies
-		_CLTOGGLE.ToggledAccent.Enabled = false -- clothing
-		_PPTOGGLE.ToggledAccent.Enabled = true -- penis
-		_ETOGGLE.ToggledAccent.Enabled = true -- erection
-		_CUTOGGLE.ToggledAccent.Enabled = false -- cum
-		_PTOGGLE.ToggledAccent.Enabled = true -- piss
-
-		-- mechanics
-		shirt.ShirtTemplate = current_nood_shirt
-		pants.PantsTemplate = current_nood_pants
-
-		Undie.Transparency = 1
-		Erect.Transparency = 1
-		Base.Transparency = 1
-		FlaccidPissEmitter.Enabled = false
-		ErectPissEmitter.Enabled = false
-		FlaccidCumEmitter.Enabled = false
-		ErectCumEmitter.Enabled = false
-		Undie.Color = Color3.fromRGB(225, 225, 184)
-
-		-- vars
-		UNDIES_ENABLED = true
-		CLOTHED_ENABLED = false
-		ERECT_ENABLED = false
-		COCK_ENABLED = false
-		PISS_ENABLED = true
-		CUM_ENABLED = false
+	if __INIT__ then
+	    if COCK_ENABLED == true and ERECT_ENABLED == false then
+    		-- Accents
+    		_UNDTOGGLE.ToggledAccent.Enabled = false -- undies
+    		_CLTOGGLE.ToggledAccent.Enabled = false -- clothing
+    		_PPTOGGLE.ToggledAccent.Enabled = true -- penis
+    		_ETOGGLE.ToggledAccent.Enabled = false -- erection
+    		_CUTOGGLE.ToggledAccent.Enabled = false -- cum
+    		_PTOGGLE.ToggledAccent.Enabled = true -- piss
+    
+    		-- mechanics
+    		shirt.ShirtTemplate = current_nood_shirt
+    		pants.PantsTemplate = current_nood_pants
+    
+    		Undie.Transparency = 1
+    		Erect.Transparency = 1
+    		Base.Transparency = 0
+    		FlaccidPissEmitter.Enabled = true
+    		ErectPissEmitter.Enabled = false
+    		FlaccidCumEmitter.Enabled = false
+    		ErectCumEmitter.Enabled = false
+    		Undie.Color = Color3.new(0.937,0.937,0.937)
+    
+    		-- vars
+    		UNDIES_ENABLED = false
+    		CLOTHED_ENABLED = false
+    		ERECT_ENABLED = false
+    		COCK_ENABLED = true
+    		PISS_ENABLED = true
+    		CUM_ENABLED = false
+    	elseif COCK_ENABLED == true and ERECT_ENABLED == false then
+    		-- Accents
+    		_UNDTOGGLE.ToggledAccent.Enabled = false -- undies
+    		_CLTOGGLE.ToggledAccent.Enabled = false -- clothing
+    		_PPTOGGLE.ToggledAccent.Enabled = true -- penis
+    		_ETOGGLE.ToggledAccent.Enabled = true -- erection
+    		_CUTOGGLE.ToggledAccent.Enabled = false -- cum
+    		_PTOGGLE.ToggledAccent.Enabled = true -- piss
+    
+    		-- mechanics
+    		shirt.ShirtTemplate = current_nood_shirt
+    		pants.PantsTemplate = current_nood_pants
+    
+    		Undie.Transparency = 1
+    		Erect.Transparency = 0
+    		Base.Transparency = 0
+    		FlaccidPissEmitter.Enabled = false
+    		ErectPissEmitter.Enabled = true
+    		FlaccidCumEmitter.Enabled = false
+    		ErectCumEmitter.Enabled = false
+    		Undie.Color = Color3.new(0.937,0.937,0.937)
+    
+    		-- vars
+    		UNDIES_ENABLED = false
+    		CLOTHED_ENABLED = false
+    		ERECT_ENABLED = true
+    		COCK_ENABLED = true
+    		PISS_ENABLED = true
+    		CUM_ENABLED = false
+    	elseif COCK_ENABLED == false and UNDIES_ENABLED == true then
+    		-- Accents
+    		_UNDTOGGLE.ToggledAccent.Enabled = true -- undies
+    		_CLTOGGLE.ToggledAccent.Enabled = false -- clothing
+    		_PPTOGGLE.ToggledAccent.Enabled = false -- penis
+    		_ETOGGLE.ToggledAccent.Enabled = false -- erection
+    		_CUTOGGLE.ToggledAccent.Enabled = false -- cum
+    		_PTOGGLE.ToggledAccent.Enabled = true -- piss
+    
+    		-- mechanics
+    		shirt.ShirtTemplate = current_undie_shirt
+    		pants.PantsTemplate = current_undie_pants
+    
+    		Undie.Transparency = 0
+    		Erect.Transparency = 1
+    		Base.Transparency = 1
+    		FlaccidPissEmitter.Enabled = false
+    		ErectPissEmitter.Enabled = false
+    		FlaccidCumEmitter.Enabled = false
+    		ErectCumEmitter.Enabled = false
+    		Undie.Color = Color3.fromRGB(225, 225, 184)
+    
+    		-- vars
+    		UNDIES_ENABLED = true
+    		CLOTHED_ENABLED = false
+    		ERECT_ENABLED = false
+    		COCK_ENABLED = false
+    		PISS_ENABLED = true
+    		CUM_ENABLED = false
+    	end
 	end
 end)
 
